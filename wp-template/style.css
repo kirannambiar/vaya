@@ -1,0 +1,367 @@
+/*
+ * Theme Name: Vaya Theme
+ * Description: First test WordPress Theme
+ * Author: Kiran Nambiar
+ * Version: 0.1
+ * 
+ */
+
+html {
+	font-size:12px;
+}
+
+body {
+	background-color: rgb(255, 255, 255);
+  	font-size: 1.2rem;
+  	color: rgb(0,0,0);
+  	margin: 0 0 0 0;
+  	font-family: 'Lato';
+	font-weight: 300;
+	font-style:normal;
+	line-height: 3.08rem;
+}
+
+h1 {
+	color:#D19127;
+	font-family: 'Lato';
+	font-weight: 300;
+	font-style:normal;
+	font-size:2.5rem;
+}
+
+ul.brand-list {
+	list-style-type:decimal;
+}
+
+a.page-title {
+	font-style:inherit;
+	font-weight:inherit;
+	text-decoration:inherit;
+	color:inherit;
+}
+
+img.size-home {
+	width:100%;
+}
+
+.align-left-img {
+	display:inline-block;
+	height:auto;
+	width:50%;
+	float:left;
+}
+
+.align-right-img {
+	display:inline-block;
+	height:auto;
+	width:50%;
+	float:right;
+}
+
+.right-heading {
+	float:right;
+}
+
+.align-right-text {
+	display:inline-block;
+	padding:1rem;
+	float:right;
+	width:50%;
+	height:auto;
+}
+
+.align-left-text {
+	display:inline-block;
+	padding:1rem;
+	float:left;
+	width:50%;
+	height:auto;
+}
+
+div.products-content {
+	height:40rem;
+	min-height:300px;
+}
+
+div.main-section {
+	margin-top:1rem;
+	margin-bottom:1rem;
+	height:auto;
+}
+
+div.main-sub-section {
+	height:auto;
+	width:100%;
+	display:table-row;
+}
+
+#wrapper {
+	display: block;
+	border: 1px #a2a2a2 solid;
+	width: 90%;
+	margin: 0px auto;
+}
+
+#header {
+	border: 2px #a2a2a2 solid;
+}
+
+#main {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-content {
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+#delimiter {
+	clear: both;
+}
+
+#footer {
+	background-color:#000000;
+	height: 20rem;
+	max-height: 350px;
+	color: #FFFFFF;
+}
+
+.title {
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.text-2 p,
+footer p {
+  margin-bottom: 1em;
+}
+
+.brand {
+  float: left;
+  width: 18%;
+  height: 150px;
+  margin-top: 30px;
+  background-color: rgba(246, 227, 159, 0.95);
+}
+
+.brands {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 208px;
+  margin: 101px 0 0 -0.00327%;
+}
+
+.menu-main-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  width: 100%;
+  height: 3rem;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+ul.menu {
+	display:table;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+li.menu-item {
+  float: left;
+  display:table-cell;
+  list-style-type: none;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  color:#000000;
+  height:3rem;
+}
+
+li.menu-item a {
+  color:inherit;
+  text-decoration:none;
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 3rem;
+}
+
+li.menu-item a:hover {
+  background-color: rgba(209, 145, 39, 0.6);
+}
+
+._container-1 {
+  position: relative;
+  z-index: 8;
+  width: 100%;
+  height: 600px;
+  min-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  /*background: url('images/background3.jpg') rgba(222, 222, 222, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;*/
+}
+
+.hero {
+	height:100%;
+	width:auto;
+}
+
+.hero img {
+	height:100% !important;
+	width:auto !important;	
+}
+
+._container-3 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 5;
+  width: 100%;
+  height: 354px;
+  background-color: rgb(3, 0, 0);
+}
+
+@media(min-width: 2000px) {
+	.hero img {
+	  width: 100% !important;
+	}
+}
+
+
+@media(max-width: 800px) {
+	html {
+	    font-size: 1em;
+	}
+	
+	#main {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.main-content {
+		width: 100%;
+		margin-left:auto;
+		margin-right:auto;	
+	}
+	
+	ul.menu {
+		display:table;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	li.menu-item {
+	  float: left;
+	  display:table-row;
+	  list-style-type: none;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	._container-1 {
+	    position: relative;
+	    z-index: 8;
+	    min-height: 300px;
+	    height: 3rem;
+	    overflow:hidden;
+	}
+
+  	.align-left-img {
+		width:100%;
+	}
+	
+	.align-right-img {
+		width:100%;
+	}
+	
+	.right-heading {
+		float:none;
+	}
+	
+	.align-right-text {
+		width:100%;
+	}
+	
+	.align-left-text {
+		width:100%;
+	}
+}
+
+@media(max-width: 480px) {
+	html {
+	    font-size: 1em;
+	}
+	
+	#main {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.main-content {
+		width: 100%;
+		margin-left:auto;
+		margin-right:auto;	
+	}
+  
+	ul.menu {
+		display:table;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	li.menu-item {
+	  float: left;
+	  display:table-row;
+	  list-style-type: none;
+	  text-align: center;
+	  width: 100%;
+	}
+	
+	._container-1 {
+		position: relative;
+	    z-index: 8;
+	    min-height: 300px;
+	    height: 25rem;
+	    overflow:hidden;
+	}
+
+	.align-left-img {
+		width:100%;
+	}
+	
+	.align-right-img {
+		width:100%;
+	}
+	
+	.right-heading {
+		float:none;
+	}
+	
+	.align-right-text {
+		width:100%;
+	}
+	
+	.align-left-text {
+		width:100%;
+	}
+}
