@@ -127,6 +127,11 @@ div.main-sub-section {
 	height: 20rem;
 	max-height: 350px;
 	color: #FFFFFF;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding-top:1rem;
 }
 
 .title {
