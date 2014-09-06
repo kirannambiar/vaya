@@ -33,6 +33,12 @@ ul.brand-list {
 	list-style-type:decimal;
 }
 
+.page-title {
+	color:#000000;
+}
+
+
+
 a.page-title {
 	font-style:inherit;
 	font-weight:inherit;
@@ -44,27 +50,47 @@ img.size-home {
 	width:100%;
 }
 
-.align-left-img {
+div.page-content {
+	display:block;
+}
+
+h1.philosophy {
+	width:75%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h1.left-heading {
+	float:left;
+	margin-bottom:-5rem;
+	margin-left:5rem;
+}
+
+h1.right-heading {
+	padding-left:50%;
+	margin-bottom:-5rem;
+	margin-left:5rem;
+}
+
+div.align-left-img {
 	display:inline-block;
-	height:auto;
+	max-height:40rem;
 	width:50%;
 	float:left;
+	overflow:hidden;
 }
 
-.align-right-img {
+div.align-right-img {
 	display:inline-block;
-	height:auto;
+	max-height:40rem;
 	width:50%;
 	float:right;
-}
-
-.right-heading {
-	float:right;
+	overflow:hidden;
 }
 
 .align-right-text {
 	display:inline-block;
-	padding:1rem;
+	padding:5rem;
 	float:right;
 	width:50%;
 	height:auto;
@@ -72,21 +98,57 @@ img.size-home {
 
 .align-left-text {
 	display:inline-block;
-	padding:1rem;
+	padding:5rem;
 	float:left;
 	width:50%;
 	height:auto;
-}
-
-div.products-content {
-	height:40rem;
-	min-height:300px;
 }
 
 div.main-section {
 	margin-top:1rem;
 	margin-bottom:1rem;
 	height:auto;
+	display:table-row;
+}
+
+
+div.philosophy {
+	width: 75%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 5rem;
+}
+
+div.store-loc-content {
+	background-color:#EECE8C;
+	height:40rem;
+}
+
+table.store-loc {
+	padding-left:5rem;
+	padding-top:5rem;
+}
+
+div.store-adds {
+	padding-top:6rem;
+	padding-left:5rem;
+}
+
+div.store-add {
+	width:30%;
+	display:inline-block;
+	vertical-align:top;
+	padding-bottom:3rem;
+	line-height:2rem;
+}
+
+strong.store-city {
+	display:table-row;
+}
+
+div.main-content {
+	height: 40rem;
+	min-height:300px;	
 }
 
 div.main-sub-section {
@@ -112,11 +174,7 @@ div.main-sub-section {
 	margin-right: auto;
 }
 
-.main-content {
-	width: 75%;
-	margin-left:auto;
-	margin-right:auto;	
-}
+
 
 #delimiter {
 	clear: both;
@@ -262,23 +320,27 @@ li.menu-item a:hover {
 	    overflow:hidden;
 	}
 
-  	.align-left-img {
+  	div.align-left-img {
 		width:100%;
 	}
 	
-	.align-right-img {
+	div.align-right-img {
 		width:100%;
 	}
 	
-	.right-heading {
+	div.right-heading {
 		float:none;
 	}
 	
-	.align-right-text {
+	div.align-right-text {
 		width:100%;
 	}
 	
-	.align-left-text {
+	div.align-left-text {
+		width:100%;
+	}
+		
+	div.store-add {
 		width:100%;
 	}
 }
@@ -324,23 +386,27 @@ li.menu-item a:hover {
 	    overflow:hidden;
 	}
 
-	.align-left-img {
+	div.align-left-img {
 		width:100%;
 	}
 	
-	.align-right-img {
+	div.align-right-img {
 		width:100%;
 	}
 	
-	.right-heading {
+	div.right-heading {
 		float:none;
 	}
 	
-	.align-right-text {
+	div.align-right-text {
 		width:100%;
 	}
 	
-	.align-left-text {
+	div.align-left-text {
+		width:100%;
+	}
+	
+	div.store-add {
 		width:100%;
 	}
 }
