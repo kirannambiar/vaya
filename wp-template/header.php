@@ -27,6 +27,57 @@
 		  ga('send', 'pageview');
 		
 		</script>
+		
+		<script>
+			$(document).ready(function(){
+				var $root = $('html, body');
+				$('a[href*=#]').on('click',function (e) {
+				      // prevent normal scrolling action
+					  e.preventDefault();
+					  // grab the target url from the anchor's href
+					  var target = $(this.hash);
+					  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					  if (target.length) {
+					     $root.stop().animate({
+					         scrollTop: target.offset().top - 90
+					    }, 1000);
+					    window.location.hash = this.hash;
+						return false;
+					}
+				});
+			
+				$(".align-left-img").each(function(){
+				    // Uncomment the following if you need to make this dynamic
+				    var refH = $(this).height();
+				    var refW = $(this).width();
+				    var refRatio = refW/refH;
+				
+				    var imgH = $(this).children("img").height();
+				    var imgW = $(this).children("img").width();
+				
+				    if ( (imgW/imgH) < refRatio ) { 
+				        $(this).addClass("portrait");
+				    } else {
+				        $(this).addClass("landscape");
+				    }
+				});
+				$(".align-right-img").each(function(){
+				    // Uncomment the following if you need to make this dynamic
+				    var refH = $(this).height();
+				    var refW = $(this).width();
+				    var refRatio = refW/refH;
+				
+				    var imgH = $(this).children("img").height();
+				    var imgW = $(this).children("img").width();
+				
+				    if ( (imgW/imgH) < refRatio ) { 
+				        $(this).addClass("portrait");
+				    } else {
+				        $(this).addClass("landscape");
+				    }
+				});
+			});
+		</script>
 
 		<?php wp_head(); ?>
 	</head>

@@ -46,10 +46,6 @@ a.page-title {
 	color:inherit;
 }
 
-img.size-home {
-	width:100%;
-}
-
 div.page-content {
 	display:block;
 }
@@ -74,7 +70,7 @@ h1.right-heading {
 
 div.align-left-img {
 	display:inline-block;
-	max-height:40rem;
+	height:inherit;
 	width:50%;
 	float:left;
 	overflow:hidden;
@@ -82,13 +78,20 @@ div.align-left-img {
 
 div.align-right-img {
 	display:inline-block;
-	max-height:40rem;
+	height:inherit;
 	width:50%;
 	float:right;
 	overflow:hidden;
 }
 
-.align-right-text {
+.portrait img {
+    width: 100%;
+}
+.landscape img {
+    height: 100%;
+}
+
+div.align-right-text {
 	display:inline-block;
 	padding:5rem;
 	float:right;
@@ -96,7 +99,7 @@ div.align-right-img {
 	height:auto;
 }
 
-.align-left-text {
+div.align-left-text {
 	display:inline-block;
 	padding:5rem;
 	float:left;
@@ -105,10 +108,11 @@ div.align-right-img {
 }
 
 div.main-section {
-	margin-top:1rem;
-	margin-bottom:1rem;
+	margin-top:0rem;
+	margin-bottom:0rem;
 	height:auto;
 	display:table-row;
+	overflow: hidden;
 }
 
 
@@ -152,9 +156,29 @@ div.main-content {
 }
 
 div.main-sub-section {
-	height:auto;
+	height:100%;
 	width:100%;
 	display:table-row;
+}
+
+	
+div.sendpress {
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	text-align:center;
+}
+
+.sendpress p input {
+	display:inline-block;
+}
+
+input.sendpress-submit {
+	background-color:#D19127;
+	border-style:none;
+	width:10rem;
 }
 
 #wrapper {
@@ -199,17 +223,17 @@ div.main-sub-section {
   right: 0;
   z-index: 25;
   width: 100%;
-  height: 3rem;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 
 ul.menu {
 	display:table;
 	width: 100%;
 	height: 100%;
-	margin: 0px;
 	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(209, 145, 39, 0.7);
 }
 
 li.menu-item {
@@ -219,8 +243,8 @@ li.menu-item {
   text-align: center;
   width: 25%;
   height: 100%;
-  color:#000000;
-  height:3rem;
+  color:#FFFFFF;
+  background-color: rgba(209, 145, 39, 0.7);
 }
 
 li.menu-item a {
@@ -229,8 +253,9 @@ li.menu-item a {
   display:inline-block;
   width:100%;
   text-align:center;
-  vertical-align: middle;
-  line-height: 3rem;
+  vertical-align: bottom;
+  padding-top: 3rem;
+  background-color: rgba(209, 145, 39, 0.7);
 }
 
 li.menu-item a:hover {
@@ -244,7 +269,6 @@ li.menu-item a:hover {
   height: 600px;
   min-height: 300px;
   margin: 0 auto;
-  overflow: hidden;
   /*background: url('images/background3.jpg') rgba(222, 222, 222, 0);
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,6 +299,20 @@ li.menu-item a:hover {
 @media(min-width: 2000px) {
 	.hero img {
 	  width: 100% !important;
+	}
+}
+
+@media(max-width: 1100px) {
+	#main {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.main-content {
+		width: 100%;
+		margin-left:auto;
+		margin-right:auto;	
 	}
 }
 
@@ -319,6 +357,15 @@ li.menu-item a:hover {
 	    height: 3rem;
 	    overflow:hidden;
 	}
+	
+	.portrait img {
+	    width: 100%;
+	    height:auto;
+	}
+	.landscape img {
+	    width: 100%;
+	    height:auto;
+	}
 
   	div.align-left-img {
 		width:100%;
@@ -328,20 +375,41 @@ li.menu-item a:hover {
 		width:100%;
 	}
 	
-	div.right-heading {
-		float:none;
-	}
 	
 	div.align-right-text {
+		display:block;
+		padding:1rem;
+		float:none;
+		width:100%;
+	}
+
+	div.align-left-text {
+		display:block;
+		padding:1rem;
+		float:none;
 		width:100%;
 	}
 	
-	div.align-left-text {
+	div.store-adds {
 		width:100%;
+		padding-left:2rem;
 	}
-		
+	
 	div.store-add {
 		width:100%;
+	}
+
+	h1.left-heading {
+		float:none;
+		margin-bottom:0;
+		margin-left:0;
+	}
+
+	h1.right-heading {
+		float:none;
+		padding-left:0;
+		margin-bottom:0;
+		margin-left:0;
 	}
 }
 
@@ -385,6 +453,15 @@ li.menu-item a:hover {
 	    height: 25rem;
 	    overflow:hidden;
 	}
+	
+	.portrait img {
+	    width: 100%;
+	    height:auto;
+	}
+	.landscape img {
+	    width: 100%;
+	    height:auto;
+	}
 
 	div.align-left-img {
 		width:100%;
@@ -398,15 +475,40 @@ li.menu-item a:hover {
 		float:none;
 	}
 	
+	
 	div.align-right-text {
+		display:block;
+		padding:1rem;
+		float:none;
+		width:100%;
+	}
+
+	div.align-left-text {
+		display:block;
+		padding:1rem;
+		float:none;
 		width:100%;
 	}
 	
-	div.align-left-text {
+	div.store-adds {
 		width:100%;
+		padding-left:2rem;
 	}
 	
 	div.store-add {
 		width:100%;
 	}
+		
+	h1.left-heading {
+		float:none;
+		margin-bottom:0;
+		margin-left:0;
+	}
+
+	h1.right-heading {
+		float:none;
+		padding-left:0;
+		margin-bottom:0;
+		margin-left:0;
+	}	
 }
