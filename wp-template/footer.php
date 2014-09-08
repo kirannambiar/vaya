@@ -3,5 +3,6 @@
 	<p>Copyright 2014 Vaya Pvt. Ltd. All rights reserved.</p>
 </div>
 <?php wp_footer() ?>
+
 </body>
 </html>

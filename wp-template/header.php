@@ -46,7 +46,7 @@
 					}
 				});
 			
-				$(".align-left-img").each(function(){
+				$("div.align-left-img").each(function(){
 				    // Uncomment the following if you need to make this dynamic
 				    var refH = $(this).height();
 				    var refW = $(this).width();
@@ -61,7 +61,7 @@
 				        $(this).addClass("landscape");
 				    }
 				});
-				$(".align-right-img").each(function(){
+				$("div.align-right-img").each(function(){
 				    // Uncomment the following if you need to make this dynamic
 				    var refH = $(this).height();
 				    var refW = $(this).width();
@@ -82,8 +82,9 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
+	
 		<div class="_container _container-1 clearfix">
+			
 			<?php echo do_shortcode("[metaslider id=32]"); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-	    	<div class="logodiv"></div>
 		</div>
