@@ -4,6 +4,7 @@
 	$products_page = get_page_by_path('products');
 	$events_page = get_page_by_path('events');
 	$stores_page = get_page_by_path('stores');
+	$press_page = get_page_by_path('press-links');
 ?>
 
 <div id="main">
@@ -31,6 +32,11 @@
 
 		<div class="newsletter main-section">
 			<?php echo do_shortcode("[sp-signup email_label='SUBSCRIBE TO THE VAYA NEWSLETTER' listids='109' redirect_page='' lists_checked='1' label_display='false' thank_you='Thank you for subscribing!' button_text='Submit' ]"); ?>
+		</div>
+		
+		<div class="press-content main-section">
+			<h1 class="page-title left-heading"><a name="press" class="page-title"><?php echo $press_page->post_title; ?></a></h1>
+			<?php echo $press_page->post_content; ?>
 		</div>
 
 	</div>

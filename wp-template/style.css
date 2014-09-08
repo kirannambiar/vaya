@@ -155,6 +155,41 @@ strong.store-city {
 	display:table-row;
 }
 
+div.press-content {
+	background-color:#EECE8C;
+	height:50rem;
+}
+
+div.press-text {
+	float:left;
+	height:25rem;
+	width:35%;
+	display:inline-block;
+}
+
+div.press-image-1 {
+	float:right;
+	height:50rem;
+	width:65%;
+	display:inline-block;
+	overflow:hidden;
+}
+
+div.press-image-2 {
+	float:left;
+	height:40rem;
+	width:35%;
+	display:inline-block;
+}
+
+img.press-image-1 {
+	width:100%;
+}
+
+img.press-image-2 {
+	height:100%;
+}
+
 div.main-content {
 	height: 40rem;
 	min-height:300px;	
@@ -417,6 +452,34 @@ li.menu-item a:hover {
 		margin-bottom:0;
 		margin-left:0;
 	}
+	
+	div.press-text {
+		float:none;
+		height:10rem;
+		width:100%;
+		display:inline-block;
+	}
+	
+	div.press-image-1 {
+		float:none;
+		height:30rem;
+		width:100%;
+		display:inline-block;
+		overflow:hidden;
+	}
+	
+	div.press-image-2 {
+		float:none;
+		width:100%;
+		display:inline-block;
+	}
+	
+	img.press-image-1 {
+	    width: 100%;
+	}
+	img.press-image-2 {
+	    width: 100%;
+	}
 }
 
 @media(max-width: 480px) {
@@ -517,4 +580,32 @@ li.menu-item a:hover {
 		margin-bottom:0;
 		margin-left:0;
 	}	
+	
+	div.press-text {
+		float:none;
+		height:10rem;
+		width:100%;
+		display:inline-block;
+	}
+	
+	div.press-image-1 {
+		float:none;
+		height:30rem;
+		width:100%;
+		display:inline-block;
+		overflow:hidden;
+	}
+	
+	div.press-image-2 {
+		float:none;
+		width:100%;
+		display:inline-block;
+	}
+	
+	img.press-image-1 {
+	    width: 100%;
+	}
+	img.press-image-2 {
+	    width: 100%;
+	}
 }
