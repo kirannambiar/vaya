@@ -32,12 +32,14 @@ h1 {
 ul.brand-list {
 	list-style-type:none;
 	display:table;
+	width:100%;
 }
 
 li.brand-list {
 	display:table-cell;
 	border-right-style:solid;
 	padding-right:2rem;
+	padding-left:2rem;
 }
 
 .page-title {

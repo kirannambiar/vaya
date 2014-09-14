@@ -16,7 +16,7 @@
 		</div>
 
 		<div class="products-content main-section">
-			<h1 class="page-title right-heading"><a name="products" class="page-title"><?php echo $products_page->post_title; ?></a></h1>
+			<h1 class="page-title"><a name="products" class="page-title"><?php echo $products_page->post_title; ?></a></h1>
 			<?php echo $products_page->post_content; ?>
 		</div>
 
