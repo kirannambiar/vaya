@@ -30,7 +30,14 @@ h1 {
 }
 
 ul.brand-list {
-	list-style-type:decimal;
+	list-style-type:none;
+	display:table;
+}
+
+li.brand-list {
+	display:table-cell;
+	border-right-style:solid;
+	padding-right:2rem;
 }
 
 .page-title {
@@ -103,6 +110,14 @@ div.align-left-text {
 	padding:5rem;
 	float:left;
 	width:50%;
+	height:auto;
+}
+
+div.product-text {
+	display:inline-block;
+	padding:5rem;
+	float:left;
+	width:33%;
 	height:auto;
 }
 
