@@ -33,6 +33,16 @@ ul.brand-list {
 	list-style-type:none;
 	display:table;
 	width:100%;
+<<<<<<< HEAD
+=======
+}
+
+li.brand-list {
+	display:table-cell;
+	border-right-style:solid;
+	padding-right:2rem;
+	padding-left:2rem;
+>>>>>>> FETCH_HEAD
 }
 
 li.brand-list {
@@ -118,6 +128,14 @@ div.align-left-text {
 	padding:5rem;
 	float:left;
 	width:50%;
+	height:auto;
+}
+
+div.product-text {
+	display:inline-block;
+	padding:5rem;
+	float:left;
+	width:33%;
 	height:auto;
 }
 
