@@ -83,7 +83,7 @@
 	</head>
 	<body>
 	
-		<div class="_container _container-1 clearfix">
+		<div class="header-container clearfix">
 			
 			<?php echo do_shortcode("[metaslider id=32]"); ?>
 			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
