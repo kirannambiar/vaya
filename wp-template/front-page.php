@@ -22,12 +22,12 @@
 		</div>
 
 		<div class="events-content main-section clearfix">
-			<h1 class="page-title left-heading clearfix"><a name="events" class="page-title"><?php echo $events_page->post_title; ?></a></h1>
-			<div class="main-sub-section clearfix"><?php echo do_shortcode('[events_list scope="future" limit=5 pagination=1]'); ?></div>
+			<h1 class="page-title"><a name="events" class="page-title"><?php echo $events_page->post_title; ?></a></h1>
+			<div class="main-sub-section"><?php echo do_shortcode('[events_list scope="future" limit=5 pagination=1]'); ?></div>
 		</div>
 
 		<div class="store-loc-content main-section clearfix">
-			<h1 class="page-title left-heading"><a name="stores" class="page-title"><?php echo $stores_page->post_title; ?></a></h1>
+			<h1 class="page-title"><a name="stores" class="page-title"><?php echo $stores_page->post_title; ?></a></h1>
 			<?php echo $stores_page->post_content; ?>
 		</div>
 
