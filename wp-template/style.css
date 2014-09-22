@@ -33,6 +33,8 @@ ul.brand-list {
 	list-style-type:none;
 	display:table;
 	width:100%;
+	color:#D19127;
+	text-align:center;
 }
 
 li.brand-list {
@@ -40,6 +42,10 @@ li.brand-list {
 	border-right-style:solid;
 	padding-right:2rem;
 	padding-left:2rem;
+}
+
+li.brand-list-last {
+	border-right-style:none;
 }
 
 div.product-text {
@@ -74,12 +80,14 @@ h1.philosophy {
 h1.left-heading {
 	margin-bottom:-5rem;
 	margin-left:5rem;
+	display:table-row;
 }
 
 h1.right-heading {
 	padding-left:50%;
 	margin-bottom:-5rem;
 	margin-left:5rem;
+	display:table-row;
 }
 
 div.align-left-img {
@@ -120,17 +128,6 @@ div.align-left-text {
 	width:50%;
 	height:auto;
 }
-
-
-div.main-section {
-	margin-top:0rem;
-	margin-bottom:0rem;
-	height:100%;
-	display:table-row;
-	overflow: hidden;
-	position:relative;
-}
-
 
 div.philosophy {
 	width: 75%;
@@ -206,15 +203,26 @@ img.press-image-2 {
 	height:100%;
 }
 
-div.main-content {
+div.intro {
 	height: 40rem;
-	min-height:300px;	
+	min-height:300px;
+	margin-top:0rem;
+	margin-bottom:0rem;
+	height:100%;
+	display:table-row;
+	overflow: hidden;
+	position:relative;
 }
 
 div.main-sub-section {
 	height:100%;
 	width:100%;
 	display:table-row;
+}
+
+div.main-section {
+	height:inherit;
+	padding-top:2rem;
 }
 
 	
@@ -325,13 +333,24 @@ li.menu-item a:hover {
   height: 600px;
   min-height: 300px;
   margin: 0 auto;
-  overflow-x:hidden;
-  overflow-y:visible;
+  overflow:hidden;
   /*background: url('images/background3.jpg') rgba(222, 222, 222, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;*/
+}
+
+.product-slider {
+	width:100%;
+	height:40rem;
+	max-height:500px;
+	max-width:inherit;
+	overflow:hidden;
+}
+
+#metaslider_1985 {
+	height:100%;
 }
 
 .hero {
@@ -367,7 +386,7 @@ li.menu-item a:hover {
 		margin-right: auto;
 	}
 	
-	.main-content {
+	.intro {
 		width: 100%;
 		margin-left:auto;
 		margin-right:auto;	
@@ -386,7 +405,7 @@ li.menu-item a:hover {
 		margin-right: auto;
 	}
 	
-	.main-content {
+	.intro {
 		width: 100%;
 		margin-left:auto;
 		margin-right:auto;	
@@ -433,6 +452,20 @@ li.menu-item a:hover {
 		width:100%;
 	}
 	
+	li.brand-list {
+		display:table-row;
+		border-right-style:none;
+		padding-right:0rem;
+		padding-left:0rem;
+	}
+	
+	div.product-text {
+		display:inline-block;
+		padding:3rem;
+		float:none;
+		width:100%;
+		height:auto;
+	}
 	
 	div.align-right-text {
 		display:block;
@@ -510,7 +543,7 @@ li.menu-item a:hover {
 		margin-right: auto;
 	}
 	
-	.main-content {
+	.intro {
 		width: 100%;
 		margin-left:auto;
 		margin-right:auto;	
@@ -561,6 +594,21 @@ li.menu-item a:hover {
 		float:none;
 	}
 	
+	
+	li.brand-list {
+		display:table-row;
+		border-right-style:none;
+		padding-right:0rem;
+		padding-left:0rem;
+	}
+	
+	div.product-text {
+		display:inline-block;
+		padding:3rem;
+		float:none;
+		width:100%;
+		height:auto;
+	}
 	
 	div.align-right-text {
 		display:block;

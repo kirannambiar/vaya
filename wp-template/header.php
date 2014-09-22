@@ -18,17 +18,6 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 		
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		  ga('create', 'UA-38960598-1', 'auto');
-		  ga('send', 'pageview');
-		
-		</script>
-		
-		<script>
 			$(document).ready(function(){
 				var $root = $('html, body');
 				$('a[href*=#]').on('click',function (e) {
@@ -82,9 +71,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-	
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		<div class="header-container clearfix">
-			
-			<?php echo do_shortcode("[metaslider id=32]"); ?>
-			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+			<?php echo do_shortcode("[metaslider id=32 percentwidth=100]"); ?>
 		</div>
