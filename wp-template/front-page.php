@@ -8,8 +8,9 @@
 ?>
 
 <div id="main">
+	
 	<div id="content clearfix">
-		
+				
 		<div class="intro main-section clearfix">
 			<h1 class="page-title philosophy"><a name="philosophy" class="page-title"><?php echo $philosophy_page->post_title; ?></a></h1>
 			<?php echo $philosophy_page->post_content; ?>
