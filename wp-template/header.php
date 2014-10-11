@@ -65,6 +65,14 @@
 				        $(this).addClass("landscape");
 				    }
 				});
+				$(window).scroll(function() {    
+				    var scroll = $(window).scrollTop();
+				    if (scroll >= 500) {
+				        $(".menu-main-menu-container").addClass("menu-main-menu-container-scroll");
+				    } else {
+				        $(".menu-main-menu-container").removeClass("menu-main-menu-container-scroll");
+				    }
+				});
 			});
 		</script>
 
