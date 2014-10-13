@@ -35,7 +35,7 @@ div.brands {
 
 ul.brand-list {
 	list-style-type:none;
-	display:table;
+	display:table-row;
 	width:100%;
 	color:#D19127;
 	text-align:center;
@@ -45,8 +45,8 @@ ul.brand-list {
 li.brand-list {
 	display:table-cell;
 	border-right-style:solid;
-	padding-right:2rem;
-	padding-left:2rem;
+	padding-right:4rem;
+	padding-left:4rem;
 }
 
 li.brand-list-last {
@@ -227,6 +227,7 @@ div.main-sub-section {
 div.main-section {
 	height:inherit;
 	padding-top:2rem;
+	overflow:hidden;
 }
 
 	
@@ -480,6 +481,15 @@ li.menu-item a:hover {
 		height:auto;
 	}
 	
+	.product-slider {
+		height:15rem;
+		max-height:300px;
+	}
+	
+	img.product-slider {
+		height:100%;
+	}
+	
 	div.align-right-text {
 		display:block;
 		padding:1rem;
@@ -512,7 +522,7 @@ li.menu-item a:hover {
 	
 	div.press-image-1 {
 		float:none;
-		height:30rem;
+		height:auto;
 		width:100%;
 		display:inline-block;
 		overflow:hidden;
@@ -520,6 +530,7 @@ li.menu-item a:hover {
 	
 	div.press-image-2 {
 		float:none;
+		height:auto;
 		width:100%;
 		display:inline-block;
 	}

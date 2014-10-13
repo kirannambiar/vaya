@@ -73,6 +73,13 @@
 				        $(".menu-main-menu-container").removeClass("menu-main-menu-container-scroll");
 				    }
 				});
+				/*$(window).resize(function() {
+					var heroConWidth = $(".hero").width();
+					var heroImgWidth = $(".hero img").width();
+					var gap = (heroImgWidth - heroConWidth)/2;
+					//alert("alert: " + gap);
+					$(".hero img").css("margin-left",-gap);
+				});*/
 			});
 		</script>
 
