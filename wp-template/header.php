@@ -26,9 +26,10 @@
 					  // grab the target url from the anchor's href
 					  var target = $(this.hash);
 					  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					  
 					  if (target.length) {
 					     $root.stop().animate({
-					         scrollTop: target.offset().top - 90
+					         scrollTop: target.offset().top - 90;
 					    }, 1000);
 					    window.location.hash = this.hash;
 						return false;
